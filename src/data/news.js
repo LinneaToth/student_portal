@@ -78,5 +78,63 @@ export const news = [
         "tags": ["wellbeing", "events", "support"],
         "author": "Andreas Nilsson",
         "imgurl": "https://i.pravatar.cc/150?u=mentalhealthweek"
+    },
+
+    {
+        "id": 11,
+        "title": "Pixel Dev Camp Announces Summer Tracks",
+        "body": "The upcoming Pixel Dev Camp will offer new specialized tracks, including AI Game Design, WebXR Development, and Narrative Worldbuilding. Led by industry mentors and academy alumni, these immersive sessions give students a chance to dive deep into emerging tech while building portfolio-ready projects. Applications open next week, and spots are expected to fill quickly.",
+        "tags": ["summer", "camp", "development"],
+        "author": "Sara Lindqvist",
+        "imgurl": "https://i.pravatar.cc/150?u=devcamp2025"
+    },
+    {
+        "id": 12,
+        "title": "Student-Run Studio Launches First Title",
+        "body": "Pixel Forge, the student-led game studio at Pixel Academy, has just released its debut title: *Echo Bloom*. Developed over two semesters, the game explores memory and identity through hand-drawn visuals and ambient sound design. The studio credits their collaborative approach and faculty support as key to the project's success. The game is now available on itch.io.",
+        "tags": ["students", "games", "launch"],
+        "author": "Felix Holm",
+        "imgurl": "https://i.pravatar.cc/150?u=echobloomlaunch"
+    },
+    {
+        "id": 13,
+        "title": "UX Lab Opens Doors to Public Testing",
+        "body": "Pixel Academy's UX Research Lab has opened a public portal for community members to participate in user testing. This initiative not only provides students with real-world feedback but also strengthens ties between the academy and the local tech community. Participants can sign up to test games, apps, and interactive installations in exchange for early access and merch.",
+        "tags": ["UX", "community", "testing"],
+        "author": "Tariq Andersson",
+        "imgurl": "https://i.pravatar.cc/150?u=uxlabpublic"
+    },
+    {
+        "id": 14,
+        "title": "Interactive Media Students Host Exhibition",
+        "body": "Graduating students from the Interactive Media program are set to host an immersive exhibition showcasing their capstone projects. Installations range from AR-enhanced poetry to sensor-based music compositions. The event is open to the public and will include live performances and artist talks, offering a window into the future of creative technology.",
+        "tags": ["exhibition", "interactive", "graduation"],
+        "author": "Nora Pettersson",
+        "imgurl": "https://i.pravatar.cc/150?u=intermediaexpo"
+    },
+    {
+        "id": 15,
+        "title": "New Sustainability Course Added to Curriculum",
+        "body": "Starting this fall, Pixel Academy will offer 'Designing for Sustainability,' a new interdisciplinary course focused on environmental impact in tech and design. Students will learn principles of eco-conscious development, explore case studies, and prototype low-carbon digital products. The course is part of the academy’s broader push toward responsible innovation.",
+        "tags": ["sustainability", "curriculum", "design"],
+        "author": "Isak Lundgren",
+        "imgurl": "https://i.pravatar.cc/150?u=sustainabletech"
+    },
+    {
+        "id": 16,
+        "title": "Pixel Academy Partners with Indie Game Fest",
+        "body": "Pixel Academy has announced an exciting new partnership with Indie Game Fest 2025. Selected student projects will be featured alongside professional indie titles, giving young developers a chance to showcase their work on a major stage. The collaboration includes mentorship opportunities, portfolio reviews, and exclusive backstage access for participating students.",
+        "tags": ["partnership", "events", "games"],
+        "author": "Lina Östberg",
+        "imgurl": "https://i.pravatar.cc/150?u=indiefestpixel"
+    },
+    {
+        "id": 17,
+        "title": "Faculty Launch Podcast on Creative Tech",
+        "body": "A group of Pixel Academy faculty members has launched *Pixel Frequency*, a new podcast exploring creativity, technology, and education. Each episode features interviews with innovators from the fields of game design, digital art, and interactive storytelling. The podcast aims to inspire students and educators alike by spotlighting diverse voices in creative tech.",
+        "tags": ["podcast", "faculty", "innovation"],
+        "author": "Henrik Dahl",
+        "imgurl": "https://i.pravatar.cc/150?u=podcastlaunch"
     }
 ]
+
