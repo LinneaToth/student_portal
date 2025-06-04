@@ -9,7 +9,7 @@ export default function CourseCard({ course }) {
         </header>
         <p class="card-text">{course.description.slice(0, 150) + " ... "}</p>
         <a
-          href={`/courses/:${course.id}`}
+          href={`#/courses/:${course.id}`}
           className="btn btn-primary mt-auto card-link mt-auto"
           role="button">
           Read more
