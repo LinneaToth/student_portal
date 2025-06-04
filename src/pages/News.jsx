@@ -38,12 +38,12 @@ export default function News() {
   return (
     <main className="d-flex flex-wrap justify-content-center">
       <h1 className="w-100 text-center">Latest Academy News</h1>
-      <div className="container-lg d-flex justify-content-between align-items-center">
+      <div className="container-lg d-flex flex-wrap justify-content-between">
         {/* <label className="align-self-center" htmlFor="lookFor">
           Search for news:
         </label> */}
         <form
-          className="d-flex gap-2 align-items-center"
+          className=" p-2  d-flex gap-2 align-items-center justify"
           onSubmit={(e) => e.preventDefault()}>
           <input
             className="align-self-center form-control"
@@ -57,7 +57,7 @@ export default function News() {
             value={lookingFor}
           />
           <button
-            className="btn btn-secondary"
+            className=" p-2  btn btn-secondary"
             onClick={() => setLookingFor("")}>
             Clear{" "}
           </button>

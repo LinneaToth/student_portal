@@ -1,5 +1,7 @@
 import { NavLink } from "react-router";
 
+import RegisteredCourses from "./RegisteredCourses";
+
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,6 +39,8 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
+
+        <RegisteredCourses />
       </div>
     </nav>
   );

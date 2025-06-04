@@ -27,8 +27,8 @@ export default function Pagination({ step, maxStep, setStep }) {
   }
 
   return (
-    <nav aria-label="News navigation" className="align-self-center">
-      <ul className="pagination mt-auto">
+    <nav aria-label="News navigation" className="d-flex p-2 ">
+      <ul className="pagination">
         <li className="page-item">
           <a
             className={`page-link ${step === 1 ? "disabled" : ""}`}
