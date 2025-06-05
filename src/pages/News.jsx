@@ -36,7 +36,7 @@ export default function News() {
 
   return (
     <main className="d-flex flex-wrap justify-content-center">
-      <h1 className="w-100 text-center display-5">Latest Academy News</h1>
+      <h1 className="w-100 text-center display-5 mb-5">Latest Academy News</h1>
       <div className="container-lg d-flex flex-wrap justify-content-between ">
         <Search
           setLookingFor={setLookingFor}

@@ -16,7 +16,7 @@ export default function Register() {
 
   return (
     <main className="justify-content-center container-fluid">
-      <h1 className="text-center mb-5 display-5">Course Registration</h1>
+      <h1 className="text-center mb-5 display-5 mb-5">Course Registration</h1>
       <div className="shadow-sm rounded-3 bg-light container p-3">
         <h3 className="lead mb-5 mt-3">
           Your current registrations: {registeredCourses.length}

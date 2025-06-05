@@ -10,7 +10,7 @@ export default function CourseDetails() {
 
   return (
     <>
-      <h1 className="h1 mb-5">{course.title}</h1>
+      <h1 className="h1 mb-5 display-5 text-center">{course.title}</h1>
       <div className="container mb-5">
         <CourseDetailRow title="Course Description" body={course.description} />
         <CourseDetailRow title="Credits" body={course.credits} />
