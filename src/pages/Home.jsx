@@ -11,7 +11,8 @@ export default function Home() {
       className="h-100 container-fluid d-flex flex-column justify-content-around ">
       <img src={splashImage} class="img-fluid" alt="Responsive image" />
       <h1 className="w-100 text-end text-primary display-6">
-        - Home to the fine arts of virtual craftsmanship
+        - Home to the <span className="fst-italic">fine arts </span>of virtual
+        craftsmanship
       </h1>
     </main>
   );

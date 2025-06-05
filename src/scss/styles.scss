@@ -41,3 +41,13 @@ body {
 input.card-search {
   height: 42px;
 }
+
+.course-card {
+  transition-duration: 300ms;
+  transition-property: all;
+  cursor: default;
+}
+
+.course-card:hover {
+  border-color: #320975;
+}
