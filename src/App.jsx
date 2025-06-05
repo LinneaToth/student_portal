@@ -47,7 +47,7 @@ function App() {
         handleRegistration,
       }}>
       <Navbar />
-      <main className="container mt-5">
+      <div className="container mt-2">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -57,7 +57,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
         </Routes>
-      </main>
+      </div>
       <Footer />
     </StudentContext.Provider>
   );

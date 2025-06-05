@@ -21,7 +21,9 @@ body {
 }
 
 #front-main {
-  min-height: 80vh;
+  min-height: 90vh;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .logo-heading {
@@ -50,4 +52,7 @@ input.card-search {
 
 .course-card:hover {
   border-color: #320975;
+}
+
+@media only screen and (max-height: 900px) {
 }

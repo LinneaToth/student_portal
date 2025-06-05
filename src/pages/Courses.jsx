@@ -18,7 +18,7 @@ export default function Courses() {
 
   return (
     <main className="justify-content-center">
-      <h1 className="w-100 text-center display-5 mb-5">Our Courses</h1>
+      <h1 className="w-100 text-center display-5 mb-5 mt-5">Our Courses</h1>
       <Search
         setLookingFor={setLookingFor}
         lookingFor={lookingFor}
