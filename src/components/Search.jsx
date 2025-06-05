@@ -33,7 +33,7 @@ export default function Search({
         value={lookingFor}
       />
       <button
-        className=" p-2  btn btn-secondary"
+        className=" p-2  btn btn-outline-primary"
         onClick={() => setLookingFor("")}>
         Clear{" "}
       </button>

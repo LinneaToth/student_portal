@@ -21,7 +21,7 @@ export default function CourseDetails() {
         <CourseDetailRow title="Subject" body={course.subject} />
       </div>
       <RegistrationDialog idProp={id} />
-      <a className="btn btn-secondary" href="#/courses">
+      <a className="btn btn-outline-primary" href="#/courses">
         To all Courses
       </a>
     </>

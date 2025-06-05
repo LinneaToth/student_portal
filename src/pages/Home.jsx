@@ -1,22 +1,18 @@
 import { useContext } from "react";
 import { StudentContext } from "../contexts/StudentContext";
+import splashImage from "../assets/img/splash.png";
 
 export default function Home() {
   const { activeStudent } = useContext(StudentContext);
 
   return (
-    <main className="container-fluid">
-      <h1 className="text-center logo-heading">PixelAcademy</h1>
-      <h2>
-        Welcome to Pixel Academy, home to the higher arts of virtual
-        craftsmanship!
-      </h2>
-      <a href={`#/courses/`} className="btn btn-primary mt-auto" role="button">
-        Courses
-      </a>
-      <a href={`#/news/`} className="btn btn-primary mt-auto" role="button">
-        News
-      </a>
+    <main
+      id="front-main"
+      className="h-100 container-fluid d-flex flex-column justify-content-around ">
+      <img src={splashImage} class="img-fluid" alt="Responsive image" />
+      <h1 className="w-100 text-end text-primary display-6">
+        - Home to the fine arts of virtual craftsmanship
+      </h1>
     </main>
   );
 }

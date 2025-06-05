@@ -1,8 +1,29 @@
 /* Change defaults here*/
 
+$primary: #320975;
+$danger: grey;
+$secondary: #ed0cc8;
+$success: orange;
+$dark: #030000;
+$body: #ecf4ee;
+$light: white;
+
+$font-family-base: "roboto";
 @import "bootstrap";
 
 /*Custom css here*/
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+#front-main {
+  min-height: 80vh;
+}
+
 .logo-heading {
   font-family: "Pixelify Sans";
   font-size: 10rem;

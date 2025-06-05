@@ -13,7 +13,10 @@ import Select from "@mui/material/Select";
 import { courses } from "../data/courses";
 import { StudentContext } from "../contexts/StudentContext";
 
-export default function RegistrationDialog({ idProp = null }) {
+export default function RegistrationDialog({
+  idProp = null,
+  buttonText = null,
+}) {
   const {
     availableCourses,
     activeStudent,
@@ -49,7 +52,7 @@ export default function RegistrationDialog({ idProp = null }) {
           e.target.blur();
         }}
         disabled={isAlreadyRegistered}>
-        {isAlreadyRegistered ? "Already registered" : "Register"}
+        {isAlreadyRegistered ? "Already registered" : buttonText || "Register"}
       </button>
       <Dialog
         open={open}

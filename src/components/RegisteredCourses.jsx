@@ -13,9 +13,9 @@ export default function RegisteredCourses() {
   const isRegistered = registeredCourses.length > 0 ? true : false;
 
   return (
-    <div className="dropdown d-none d-lg-inline ">
+    <div className="dropdown d-none d-lg-inline w-25">
       <button
-        className="btn btn-secondary dropdown-toggle"
+        className="btn btn-dark dropdown-toggle text-light w-100 text-start ps-5"
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false">

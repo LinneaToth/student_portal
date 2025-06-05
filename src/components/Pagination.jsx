@@ -28,7 +28,7 @@ export default function Pagination({ step, maxStep, setStep }) {
 
   return (
     <nav aria-label="News navigation" className="d-flex p-2 ">
-      <ul className="pagination">
+      <ul className="pagination" style={{ cursor: "pointer" }}>
         <li className="page-item">
           <a
             className={`page-link ${step === 1 ? "disabled" : ""}`}

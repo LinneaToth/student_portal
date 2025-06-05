@@ -9,10 +9,22 @@ import { HashRouter } from "react-router";
 
 import "@fontsource/pixelify-sans";
 
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#320975",
+    },
+  },
+});
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HashRouter>
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </HashRouter>
   </StrictMode>
 );
