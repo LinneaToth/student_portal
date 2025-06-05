@@ -1,4 +1,5 @@
-{ "homepage": "https://linneatoth.github.io/student_portal",
+{
+  "homepage": "https://linneatoth.github.io/student_portal",
   "name": "kurs3_uppg4",
   "private": true,
   "version": "0.0.0",
@@ -14,6 +15,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource/pixelify-sans": "^5.2.5",
     "@mui/material": "^7.1.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.6",

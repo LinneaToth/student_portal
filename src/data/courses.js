@@ -17,7 +17,7 @@ export const courses = [
         studyTime: "Mixed hours",
         subject: "Design",
         prerequisites: "General eligibility",
-        description: "An in-depth exploration of design for game accessibility at Pixel Academy. Students will engage with theory, practice, and creative challenges to develop cutting-edge skills in this area of digital design and technology."
+        description: "A thorough exploration of design for game accessibility at Pixel Academy. Students will engage with theory, practice, and creative challenges to develop cutting-edge skills in this area of digital design and technology."
     },
     {
         id: "course-002",
@@ -55,9 +55,9 @@ export const courses = [
         numberOfMeetings: "0",
         studyPace: "Half-time",
         studyTime: "Mixed hours",
-        subject: "Design",
+        subject: "Animation",
         prerequisites: "General eligibility",
-        description: "An in-depth exploration of motion design for interfaces at Pixel Academy. Students will engage with theory, practice, and creative challenges to develop cutting-edge skills in this area of digital design and technology."
+        description: "A course in motion design for interfaces at Pixel Academy. Students will engage with theory, practice, and creative challenges to develop cutting-edge skills in this area of digital design and technology."
     },
     {
         id: "course-004",

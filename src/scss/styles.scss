@@ -3,3 +3,20 @@
 @import "bootstrap";
 
 /*Custom css here*/
+.logo-heading {
+  font-family: "Pixelify Sans";
+  font-size: 10rem;
+  color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.dropdown,
+.dropdown-menu,
+.dropdown-li {
+  min-width: 250px;
+}
+
+input.card-search {
+  height: 42px;
+}

@@ -7,7 +7,10 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       {" "}
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
+        <NavLink
+          to="/"
+          className="navbar-brand"
+          style={{ fontFamily: "Pixelify Sans" }}>
           Pixel Academy
         </NavLink>
         <button
@@ -33,8 +36,8 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/register" className="nav-link">
-                Register
+              <NavLink to="/registration" className="nav-link">
+                Registration
               </NavLink>
             </li>
           </ul>

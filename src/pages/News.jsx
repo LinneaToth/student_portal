@@ -2,6 +2,7 @@ import { news } from "../data/news";
 import { useState } from "react";
 import NewsBlock from "../components/NewsBlock";
 import Pagination from "../components/Pagination";
+import Search from "../components/Search";
 
 export default function News() {
   const [lookingFor, setLookingFor] = useState("");
@@ -33,41 +34,25 @@ export default function News() {
     newsBlocks.push(newsShowing.slice(i * newsPerPage, -1));
   }
 
-  console.log(newsBlocks, maxStep);
-
   return (
     <main className="d-flex flex-wrap justify-content-center">
       <h1 className="w-100 text-center">Latest Academy News</h1>
       <div className="container-lg d-flex flex-wrap justify-content-between">
-        {/* <label className="align-self-center" htmlFor="lookFor">
-          Search for news:
-        </label> */}
-        <form
-          className=" p-2  d-flex gap-2 align-items-center justify"
-          onSubmit={(e) => e.preventDefault()}>
-          <input
-            className="align-self-center form-control"
-            name="lookFor"
-            onChange={(e) => {
-              setLookingFor(e.target.value.toLowerCase());
-              setStep(1);
-            }}
-            type="text"
-            placeholder="Search..."
-            value={lookingFor}
-          />
-          <button
-            className=" p-2  btn btn-secondary"
-            onClick={() => setLookingFor("")}>
-            Clear{" "}
-          </button>
-        </form>
-        {lookingFor && <h5>{newsShowing.length} found</h5>}
+        <Search
+          setLookingFor={setLookingFor}
+          setStep={setStep}
+          lookingFor={lookingFor}
+          placeholder="Search"
+        />
+
+        {lookingFor && (
+          <h5 className="align-self-center">{newsShowing.length} found</h5>
+        )}
 
         <Pagination step={step} setStep={setStep} maxStep={maxStep} />
       </div>
+
       {newsBlocks.map((block, index) => {
-        console.log("current iteration", index);
         return (
           <NewsBlock
             news={block}

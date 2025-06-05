@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { StudentContext } from "../contexts/StudentContext";
+import { Link } from "react-router";
 
 export default function RegisteredCourses() {
   const {
@@ -12,28 +13,28 @@ export default function RegisteredCourses() {
   const isRegistered = registeredCourses.length > 0 ? true : false;
 
   return (
-    <div class="dropdown">
+    <div className="dropdown d-none d-lg-inline ">
       <button
-        class="btn btn-secondary dropdown-toggle"
+        className="btn btn-secondary dropdown-toggle"
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false">
         Registered courses
       </button>
-      <ul class="dropdown-menu">
+      <ul className="dropdown-menu">
         {isRegistered &&
           registeredCourses.map((c) => {
             return (
-              <li>
-                <a class="dropdown-item" href={`/courses/:${c.id}`}>
-                  {c.name}
-                </a>
+              <li className="dropdown-li">
+                <Link className="dropdown-item" to={`/courses/${c.id}`}>
+                  {c.title}
+                </Link>
               </li>
             );
           })}
         {!isRegistered && (
           <li>
-            <a class="dropdown-item">No courses added</a>
+            <a className="dropdown-item">No courses added</a>
           </li>
         )}
       </ul>

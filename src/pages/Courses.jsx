@@ -1,6 +1,7 @@
 import CourseCard from "../components/CourseCard";
 import { courses } from "../data/courses";
 import { useState } from "react";
+import Search from "../components/Search";
 
 export default function Courses() {
   const [lookingFor, setLookingFor] = useState("");
@@ -18,20 +19,11 @@ export default function Courses() {
   return (
     <main className="justify-content-center">
       <h1 className="w-100 text-center">Courses</h1>
-      <label htmlFor="lookFor">Filter courses by</label>
-      <input
-        name="lookFor"
-        onChange={(e) => setLookingFor(e.target.value)}
-        type="text"
-        placeholder="Title or description"
-        value={lookingFor}
+      <Search
+        setLookingFor={setLookingFor}
+        lookingFor={lookingFor}
+        placeholder="Title or Description"
       />
-      <button
-        onClick={() => {
-          setLookingFor("");
-        }}>
-        Reset
-      </button>
       <section className="d-flex flex-wrap">
         {coursesShowing.map((course) => (
           <CourseCard course={course} />
