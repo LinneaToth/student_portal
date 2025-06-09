@@ -1,4 +1,4 @@
-# Student Portal - ⚠️ Readme currently WIP
+# Student Portal
 
 ![Preview of layout](preview.png)
 
@@ -6,8 +6,44 @@
 
 This is..
 
+## Tech Stack
+- React + Vite
+- React Router (HashRouter) 
+- Material UI (MUI)
+- Bootstrap 5 (with some custom SASS)
+
 ## Features
-- **React**, with hooks such as **useState**, **useEffect** 
+
+### Course registration system
+- Site-wide access to user's registered courses as well as available courses, using **React Context API**
+- Several entry points for **registration** - from course details page, targeting specific course, or from a dialogue with a drop down list offering all available courses
+- Registration form with **validation** using HTML5 (required & type)
+- **Dynamic course availability**, based on already registered courses
+- All courses listed as **cards**, each with a dynamic link to a page with course details
+- **Search** function for **instant filtering** of course cards
+
+### News page
+- News page with dynamic **pagination**
+- Search function for **dynamic filtering** of news post 
+
+### MUI & Bootstrap
+- Registration dialog powered by customized **Material UI** components
+- Layout and style of **responsive and consistent interface** made with **Bootstrap**
+- Responsive navbar, made with **Bootstrap** and active section management with **React Router**
+
+### Routing
+- Single Page Application **SPA** facilitated by **React Router**
+- Routes: Home, Courses, Course Details with dynamic URL's based on route :id, News, Registration, and a fallback **Page Not Found** 
+
+### General approach
+- Separation of pages and components
+
+## Main takeaways
+I am admittedly 10+ years late to the party, but that won't put a damper on my enthusiasm for routing and hooks! My main takeaway from this project is to keep digging into the how's and why's on these apparently very useful tools. 
+
+Bootstrap was a requirement for this assignment. It was great to really try it out, but I must confess, I don't love it. I would probably have chosen Tailwind or native CSS if it were up to me. Bootstrap comes across as a bit too clunky and abstract for my taste. 
+
+I will keep working on getting better at separating logic from presentation in my components. 
 
 # Assignment - machine translated from Swedish
 
