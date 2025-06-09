@@ -4,7 +4,7 @@
 
 [Live Page](https://linneatoth.github.io/student_portal/)
 
-This is..
+This student portal was made with React + Vite, Bootstrap and MUI for a school assignment in my first semester of my Front End / Web Dev education! 
 
 ## Tech Stack
 - React + Vite
