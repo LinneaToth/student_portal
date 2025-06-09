@@ -43,7 +43,7 @@ I am admittedly 10+ years late to the party, but that won't put a damper on my e
 
 Bootstrap was a requirement for this assignment. It was great to really try it out, but I must confess, I don't love it. I would probably have chosen Tailwind or native CSS if it were up to me. Bootstrap comes across as a bit too clunky and abstract for my taste. 
 
-I will keep working on getting better at separating logic from presentation in my components. 
+I will keep working on getting better at separating logic from presentation in my components in my future projects.
 
 # Assignment - machine translated from Swedish
 
