@@ -5,8 +5,8 @@ $danger: grey;
 $secondary: #ed0cc8;
 $success: orange;
 $dark: #030000;
-$body: #ecf4ee;
-$light: white;
+$body: #fafafa;
+$light: #fff;
 
 $font-family-base: "roboto";
 @import "bootstrap";
@@ -14,6 +14,8 @@ $font-family-base: "roboto";
 /*Custom css here*/
 body {
   min-height: 100vh;
+  background: $body;
+  min-width: 350px;
 }
 
 #root {
@@ -55,4 +57,17 @@ input.card-search {
 }
 
 @media only screen and (max-height: 900px) {
+  #front-main {
+    min-height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .news-nav {
+    justify-content: center !important;
+  }
+
+  #reg-course {
+    max-width: 90%;
+  }
 }

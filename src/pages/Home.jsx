@@ -1,9 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { StudentContext } from "../contexts/StudentContext";
 import splashImage from "../assets/img/splash.png";
+import splashMobile from "../assets/img/splash_mobile.png";
 
 export default function Home() {
   const { activeStudent } = useContext(StudentContext);
+  const [isSmall, setIsSmall] = useState(
+    window.innerWidth < 640 ? true : false
+  );
+
+  window.addEventListener("resize", () => {
+    setIsSmall(window.innerWidth < 767 ? true : false);
+  });
 
   return (
     <main
@@ -11,7 +19,7 @@ export default function Home() {
       className="h-100 container-fluid d-flex flex-column justify-content-around ">
       <img
         id="splash-img"
-        src={splashImage}
+        src={isSmall ? splashMobile : splashImage}
         className="img-fluid"
         alt="Responsive image"
       />

@@ -26,7 +26,7 @@ export default function Courses() {
       />
       <section className="d-flex flex-wrap">
         {coursesShowing.map((course) => (
-          <CourseCard course={course} />
+          <CourseCard course={course} key={course.id} />
         ))}
       </section>
     </main>

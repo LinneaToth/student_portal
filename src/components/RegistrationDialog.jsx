@@ -17,13 +17,8 @@ export default function RegistrationDialog({
   idProp = null,
   buttonText = null,
 }) {
-  const {
-    availableCourses,
-    activeStudent,
-    setActiveStudent,
-    registeredCourses,
-    setRegisteredCourses,
-  } = useContext(StudentContext);
+  const { availableCourses, registeredCourses, setRegisteredCourses } =
+    useContext(StudentContext);
 
   const [courseid, setCourseid] = useState(
     idProp ? idProp : availableCourses[0].id
@@ -63,7 +58,6 @@ export default function RegistrationDialog({
             onSubmit: (event) => {
               event.preventDefault();
               setRegisteredCourses((regc) => [...regc, course]);
-              console.log(registeredCourses);
               setCourseid(availableCourses[0].id);
               handleClose();
             },

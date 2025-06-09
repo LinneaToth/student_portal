@@ -25,7 +25,7 @@ export default function RegisteredCourses() {
         {isRegistered &&
           registeredCourses.map((c) => {
             return (
-              <li className="dropdown-li">
+              <li className="dropdown-li" key={c.id}>
                 <Link className="dropdown-item" to={`/courses/${c.id}`}>
                   {c.title}
                 </Link>

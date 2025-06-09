@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export default function Pagination({ step, maxStep, setStep }) {
   const paginationArray = [];
 
@@ -18,7 +20,9 @@ export default function Pagination({ step, maxStep, setStep }) {
 
   for (let i = 0; i < maxStep; i++) {
     paginationArray.push(
-      <li className={`page-item ${i + 1 === step ? "active" : ""}`}>
+      <li
+        key={uuidv4()}
+        className={`page-item ${i + 1 === step ? "active" : ""}`}>
         <a className="page-link" onClick={() => handleCustomStep(i + 1)}>
           {i + 1}
         </a>
@@ -29,7 +33,7 @@ export default function Pagination({ step, maxStep, setStep }) {
   return (
     <nav aria-label="News navigation" className="d-flex p-2 ">
       <ul className="pagination" style={{ cursor: "pointer" }}>
-        <li className="page-item">
+        <li className="page-item" key={uuidv4()}>
           <a
             className={`page-link ${step === 1 ? "disabled" : ""}`}
             onClick={handlePrevious}>
@@ -37,7 +41,7 @@ export default function Pagination({ step, maxStep, setStep }) {
           </a>
         </li>
         {paginationArray}
-        <li className="page-item">
+        <li className="page-item" key={uuidv4()}>
           <a
             className={`page-link ${step === maxStep ? "disabled" : ""}`}
             onClick={handleNext}>

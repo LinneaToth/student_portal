@@ -6,7 +6,8 @@ import Courses from "./pages/Courses";
 import CourseDetails from "./pages/CourseDetails";
 import News from "./pages/News";
 import Registration from "./pages/Registration";
-import Footer from "./components/Footer";
+import PageNotFound from "./pages/PageNotFound";
+
 import { StudentContext } from "./contexts/StudentContext";
 import { courses } from "./data/courses";
 
@@ -56,9 +57,9 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
-      <Footer />
     </StudentContext.Provider>
   );
 }

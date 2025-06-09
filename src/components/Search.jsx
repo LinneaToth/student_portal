@@ -22,6 +22,7 @@ export default function Search({
       <input
         className="align-self-center form-control card-search"
         name="lookFor"
+        id="lookFor"
         onChange={(e) => {
           setLookingFor(e.target.value.toLowerCase());
           {

@@ -39,7 +39,7 @@ export default function News() {
       <h1 className="w-100 text-center display-5 mb-5 mt-5">
         Latest Academy News
       </h1>
-      <div className="container-lg d-flex flex-wrap justify-content-between ">
+      <div className="container-lg d-flex flex-wrap justify-content-between news-nav">
         <Search
           setLookingFor={setLookingFor}
           setStep={setStep}
@@ -57,6 +57,7 @@ export default function News() {
       {newsBlocks.map((block, index) => {
         return (
           <NewsBlock
+            key={"key" + index}
             news={block}
             step={step}
             setStep={setStep}
