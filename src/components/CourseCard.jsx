@@ -7,7 +7,7 @@ export default function CourseCard({ course }) {
         className="card border-1 d-flex flex-wrap p-4 shadow-sm rounded-3 course-card"
         style={{ height: "325px" }}>
         <header
-          className="card-title h5 mb-3 border-bottom border-1 border-primary text-primary"
+          className="card-title h5 mb-3 border-bottom border-1 border-body text-primary"
           style={{ height: "3.5rem" }}>
           <h3 className="lead">{course.title}</h3>
         </header>
