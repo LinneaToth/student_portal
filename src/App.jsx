@@ -12,14 +12,6 @@ import { StudentContext } from "./contexts/StudentContext";
 import { courses } from "./data/courses";
 
 function App() {
-  const [activeStudent, setActiveStudent] = useState({
-    name: "Gandalf",
-    id: "student123",
-    email: "drgrey@wizmail",
-  });
-
-  const handleRegistration = function (courseID = null) {};
-
   const [registeredCourses, setRegisteredCourses] = useState([]);
 
   const getAvailableCourses = function () {
@@ -31,21 +23,19 @@ function App() {
     } else {
       availableCourses = courses;
     }
-
     return availableCourses;
   };
 
   const availableCourses = getAvailableCourses();
 
+  //context ensures that user's enrolled courses are available site-wide
+  //Router provides connection between path and corresponding components
   return (
     <StudentContext.Provider
       value={{
         availableCourses,
-        activeStudent,
-        setActiveStudent,
         registeredCourses,
         setRegisteredCourses,
-        handleRegistration,
       }}>
       <Navbar />
       <div className="container mt-2">

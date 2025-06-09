@@ -1,12 +1,10 @@
-import { useContext, useState } from "react";
-import { StudentContext } from "../contexts/StudentContext";
+import { useState } from "react";
 import splashImage from "../assets/img/splash.png";
 import splashMobile from "../assets/img/splash_mobile.png";
 
 export default function Home() {
-  const { activeStudent } = useContext(StudentContext);
   const [isSmall, setIsSmall] = useState(
-    window.innerWidth < 640 ? true : false
+    window.innerWidth < 767 ? true : false
   );
 
   window.addEventListener("resize", () => {

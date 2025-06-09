@@ -1,5 +1,6 @@
-import { NavLink } from "react-router";
+//Navbar, made with bootstrap and with active sections indicated using NavLinks
 
+import { NavLink } from "react-router";
 import RegisteredCourses from "./RegisteredCourses";
 
 export default function Navbar() {
@@ -43,6 +44,7 @@ export default function Navbar() {
           </ul>
         </div>
 
+        {/*Calls the component that generates a drop down list with all currently registered courses: */}
         <RegisteredCourses />
       </div>
     </nav>

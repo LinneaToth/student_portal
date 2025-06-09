@@ -1,13 +1,16 @@
+//Registration page
+
 import { useContext } from "react";
 import { StudentContext } from "../contexts/StudentContext";
 import RegistrationDialog from "../components/RegistrationDialog";
 import { v4 as uuidv4 } from "uuid";
-import { courses } from "../data/courses";
+//UUID is used to avoiud conflicts when course id is used as key prop in other components
 
 export default function Register() {
   const { registeredCourses, setRegisteredCourses } =
     useContext(StudentContext);
 
+  //Removes matching course from registration by filtering
   function removeRegistration(id) {
     const coursesAfterRemoval = registeredCourses.filter((c) => c.id !== id);
     setRegisteredCourses([...coursesAfterRemoval]);

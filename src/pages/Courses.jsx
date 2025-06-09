@@ -1,3 +1,5 @@
+//Page displaying cards with all courses
+
 import CourseCard from "../components/CourseCard";
 import { courses } from "../data/courses";
 import { useState } from "react";

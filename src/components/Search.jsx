@@ -1,7 +1,9 @@
+//Search bar, used on two locations in the project (news and courses). If it is used on a page with pagination, there is an option of resetting the steps when searching. lookingFor is whatever the user enters.
+
 export default function Search({
   setLookingFor,
-  setStep = null,
   lookingFor,
+  setStep = null,
   placeholder,
 }) {
   return (

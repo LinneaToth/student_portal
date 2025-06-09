@@ -1,3 +1,5 @@
+//Just a page telling the user that whatever they wanted to access wasn't there
+
 export default function PageNotFound() {
   return (
     <main className="justify-content-center container-fluid">

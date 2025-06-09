@@ -1,3 +1,5 @@
+//This component exports cards for each course, data received as prop
+
 export default function CourseCard({ course }) {
   return (
     <article className="col-md-6 col-lg-4 col-xxl-3 p-2 mt-3 ">
@@ -12,7 +14,7 @@ export default function CourseCard({ course }) {
         <p className="card-text">{course.description.slice(0, 150) + "... "}</p>
         <a
           href={`#/courses/${course.id}`}
-          className="btn btn-outline-primary mt-auto card-link mt-auto"
+          className="btn btn-outline-primary card-link mt-auto"
           role="button">
           <span className="text-secondary"> &#10697;</span> Read more
         </a>

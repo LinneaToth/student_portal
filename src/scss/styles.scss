@@ -9,9 +9,10 @@ $body: #fafafa;
 $light: #fff;
 
 $font-family-base: "roboto";
+
 @import "bootstrap";
 
-/*Custom css here*/
+/*Custom scss here*/
 body {
   min-height: 100vh;
   background: $body;
@@ -56,7 +57,7 @@ input.card-search {
   border-color: #320975;
 }
 
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 600px) {
   #front-main {
     min-height: 75vh;
   }

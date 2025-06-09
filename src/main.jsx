@@ -1,15 +1,21 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+
+//Bootstrap imports:
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+//SCSS to customize the styling
 import "./scss/styles.scss";
-import App from "./App.jsx";
-import { HashRouter } from "react-router";
-
 import "@fontsource/pixelify-sans";
 
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import App from "./App.jsx";
+
+//HashRouter to make the routing work on GitHub Pages
+import { HashRouter } from "react-router";
+
+//MUI import, theme is edited to make the scheme match the rest of the site
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {

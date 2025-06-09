@@ -2,13 +2,9 @@ import { useContext } from "react";
 import { StudentContext } from "../contexts/StudentContext";
 import { Link } from "react-router";
 
+//If there are any courses registered to the user, they will be accessible with links to the corresponding course page in this drop down list.
 export default function RegisteredCourses() {
-  const {
-    activeStudent,
-    setActiveStudent,
-    registeredCourses,
-    setRegisteredCourses,
-  } = useContext(StudentContext);
+  const { registeredCourses } = useContext(StudentContext);
 
   const isRegistered = registeredCourses.length > 0 ? true : false;
 
@@ -34,7 +30,7 @@ export default function RegisteredCourses() {
           })}
         {!isRegistered && (
           <li>
-            <a className="dropdown-item">No courses added</a>
+            <span className="dropdown-item">No courses added</span>
           </li>
         )}
       </ul>

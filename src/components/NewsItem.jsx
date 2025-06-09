@@ -1,6 +1,8 @@
+//This component returns each news item (received as prop), styled as a full-width card.
+
 import { v4 as uuidv4 } from "uuid";
 
-export default function newsItem({ newsItem }) {
+export default function NewsItem({ newsItem }) {
   return (
     <article
       className="card container m-3 shadow-sm rounded-3 bg-light"

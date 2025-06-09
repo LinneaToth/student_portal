@@ -1,10 +1,12 @@
+//Page displaying details for each course
+
 import { useParams } from "react-router";
 import { courses } from "../data/courses";
 import RegistrationDialog from "../components/RegistrationDialog";
 import CourseDetailRow from "../components/CourseDetailRow";
-import Button from "@mui/material/Button";
 
 export default function CourseDetails() {
+  //useParams gets the course id from the current URL
   let { id } = useParams();
   const course = courses.find((course) => course.id == id);
 

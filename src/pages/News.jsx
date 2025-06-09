@@ -1,14 +1,22 @@
-import { news } from "../data/news";
+//Page displaying Academy news
+
 import { useState } from "react";
 import NewsBlock from "../components/NewsBlock";
 import Pagination from "../components/Pagination";
 import Search from "../components/Search";
+import { news } from "../data/news";
 
 export default function News() {
+  //lookingFor is whatever user enters in the search field
   const [lookingFor, setLookingFor] = useState("");
+
+  //Current step in pagination
   const [step, setStep] = useState(1);
+
+  //How many news shown on each page/section
   const newsPerPage = 5;
 
+  //Copying news to a mutable array
   let newsShowing = news;
 
   if (lookingFor) {
@@ -22,6 +30,8 @@ export default function News() {
   }
 
   let maxStep = Math.ceil(newsShowing.length / newsPerPage);
+
+  //newsBlocks will contain the different sections, accessible through the pagination component
   const newsBlocks = [];
 
   for (let i = 0; i < maxStep; i++) {
